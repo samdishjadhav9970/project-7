@@ -1,166 +1,193 @@
 * {
-    padding: 0;
     margin: 0;
-}
-body {
-    font-family: "Poppins";
-    max-width: 80rem;
+    padding: 0;
+  }
+  body {
+    font-family: 'Fredoka', sans-serif;
+  }
+  nav {
+    width: 90%;
     margin: 0 auto;
-}
-
-/*----------------- navbar section ---------------------- */
-nav {
-    display: flex;
-    align-items: center;
-    height: 20vh;
-    justify-content: space-between;
-}
-nav img {
-    width: 100px;
-    display: block;
-}
-nav .nav-items {
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    font-size: 1.1rem;
-}
-nav .nav-items {
-    display: flex;
-    gap: 50px;
-}
-nav .nav-items .active-item {
-    color: #fe6139;
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-nav img:last-child {
-    width: 200px;
-}
-
-/*----------------- intro section -------------------- */
-.intro-section {
-    display: flex;
-    align-items: center;
-}
-.left-section {
-    max-width: 700px;
-    margin-top: 40px;
-}
-.left-section h3 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-.left-section h3 img {
-    width: 40px;
-    margin-left: 10px;
-}
-.left-section h1 {
-    font-family: "Fredoka One";
-    font-size: 4rem;
-    font-weight: 100;
-}
-.left-section .sub-headlines {
-    font-size: 1.4rem;
-    margin-left: 80px;
-    margin-top: 40px;
-}
-.left-section .sub-headline {
-    font-size: 1.2rem;
-}
-.left-section .sub-headlines h5 {
+    padding: 36px 0;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 10px;
-}
-.left-section .sub-headlines h5 img {
-    position: relative;
-    background-color: #fe6139;
-    border-radius: 90px;
-    padding: 5px;
-    margin-right: 15px;
-    cursor: pointer;
-}
-
-.left-section .text {
-    font-size: 14px;
-    color: #7e7e7e;
-    margin-top: 60px;
-}
-.left-section .action-btns {
-    margin-top: 40px;
-}
-.left-section .action-btn {
-    background-color: #fe6139;
-    border: none;
-    padding: 16px 34px;
-    border-radius: 50px;
-    color: #FFFFFF;
-    font-size: 17px;
-    cursor: pointer;
-}
-.left-section .action-btn:not(:last-child) {
-    margin-right: 20px;
-}
-
-
-/* headphone right section */
-.right-section {
+    justify-content: space-between;
+  }
+  .intro-section {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
+    flex-direction: row;
+  }
+  .nav-items {
+    display: flex;
+  }
+  nav .fa-bars {
+    display: none;
+  }
+  .nav-items h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 0 32px;
+    font-weight: 300;
+  }
+  .nav-items h5.active-item {
+    font-weight: 600;
+    color: #fe5e35;
+  }
+  .left-section {
+    width: 60%;
+  }
+  .left-section h3 {
+    font-size: 36px;
+    padding: 20px 10px 20px 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  .left-section img[alt='circles'] {
+    width: 50px;
+  }
+  .left-section h1 {
+    font-size: 72px;
+    font-family: 'Fredoka One', sans-serif;
+  }
+  .sub-headlines {
+    padding: 20px 50px;
+  }
+  .sub-headline {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+  .sub-headline img {
+    background-color: #fe5e35;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  .text {
+    padding: 10px 100px 30px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  .action-btns button,
+  .right-section button {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #fe5e35;
+    border: none;
+    font-size: 16px;
+    margin-right: 16px;
+    border-radius: 25px;
+  }
+  
+  .right-section {
+    width: 40%;
+    display: flex;
+    text-align: center;
     flex-direction: column;
     align-items: center;
-}
-.headphone-div {
+  }
+  .headphone-div {
     position: relative;
-    width: 570px;
-}
-.headphone-div .discount-content {
+  }
+  .discount {
     position: absolute;
-    top: 230px;
-    left: 70px;
-    color: #FFFFFF;
-    font-family: "Fredoka One";
-}
-.headphone-div img:first-child {
+    top: 60%;
+    left: 0%;
+    height: 150px;
+    aspect-ratio: 1/1;
+    /* filter: drop-shadow(30px 10px 4px #4444dd); */
+    filter: drop-shadow(0px 8px 0px rgba(0, 0, 0, 0.2));
+  }
+  .discount-content {
     position: absolute;
-    width: 120px;
-    top: 200px;
-    left: 40px;
-}
-.headphone-div img:last-child {
-    width: 420px;
-    position: relative;
-    z-index: -1;
-    top: -20px;
-    left: 80px;
-}
-.right-section .dots {
+    top: 70%;
+    left: 5%;
+    font-family: 'Fredoka One', sans-serif;
+    color: #fff;
+  }
+  .discount-content h4 {
+    margin-left: 24px;
+  }
+  .discount-content h1 {
+    font-size: 44px;
+  }
+  img[alt='headphone'] {
+    width: 80%;
+  }
+  .dots {
+    padding: 24px 0 32px 0;
     display: flex;
-    gap: 20px;
-    margin-top: -20px;
-}
-.right-section .dots .dot {
-    height: 26px;
-    width: 26px;
-    border-radius: 50px;
-}
-.right-section .dots .dot.yellow-dot {
+  }
+  .dots .dot {
+    margin: 0 16px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+  }
+  .yellow-dot {
     background-color: #fbd104;
-}
-.right-section .dots .dot.tomato-dot {
+  }
+  .tomato-dot {
     background-color: #fe5e35;
-}
-.right-section .dots .dot.black-dot {
-    background-color: #000000;
-}
-.right-section .action-btn {
-    background-color: #fe6139;
-    border: none;
-    padding: 16px 34px;
-    border-radius: 50px;
-    color: #FFFFFF;
-    font-size: 17px;
-    margin-top: 48px;   
-    cursor: pointer;
-}
+  }
+  .black-dot {
+    background-color: #000;
+  }
+
+  
+  @media only screen and (max-width: 1024px) {
+    .nav-items {
+      display: none;
+    }
+    .intro-section {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+    }
+    .right-section,
+    .left-section {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    nav .fa-bars {
+      display: block;
+    }
+    nav img[alt='actions'] {
+      display: none;
+    }
+    .left-section h1 {
+      font-size: 48px;
+    }
+    .right-section,
+    .left-section {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .left-section h1 {
+      font-size: 36px;
+    }
+    .discount-content {
+      top: 72%;
+      left: 7%;
+    }
+    .right-section,
+    .left-section {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
